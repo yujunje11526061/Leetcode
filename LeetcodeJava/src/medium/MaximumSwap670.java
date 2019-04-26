@@ -13,7 +13,7 @@ public class MaximumSwap670 {
     }
 
     // 还有一空空间换时间的做法，贪婪思想，在右边找最大的数，如果不唯一，则尽可能右边去
-    // 故扫描一遍，记录某个数最右的位置，然后从左往右扫描，从[9,本身)检查，如果右边找到一个自身大的，直接交换就是最优解。
+    // 故扫描一遍，记录某个数最右的位置，然后从左往右扫描，从[9,本身)检查，如果右边找到一个比自身大的，直接交换就是最优解。
     class Solution {
         public int maximumSwap(int num) {
             ArrayList<Integer> revlist = new ArrayList<>();
