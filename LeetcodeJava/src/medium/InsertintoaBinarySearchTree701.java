@@ -20,7 +20,7 @@ public class InsertintoaBinarySearchTree701 {
             if(root.val<val){
                 root.right = insertIntoBST(root.right,val);
             }else{
-                root.left = insertIntoBST(root.left, val);
+                root.left = insertIntoBST(root.left,val);
             }
             return root;
         }
